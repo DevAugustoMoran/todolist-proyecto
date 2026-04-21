@@ -1,8 +1,8 @@
 # To Do List - Control de Tareas y Metas Personales
 
-[cite_start]Este proyecto es una aplicación web diseñada para llevar el control de tareas y metas personales. [cite_start]El objetivo principal es contar con un espacio donde las tareas necesarias para alcanzar diversas metas queden reflejadas por escrito, con la funcionalidad añadida de establecer fechas límite para su cumplimiento.
+Este proyecto es una aplicación web diseñada para llevar el control de tareas y metas personales. objetivo principal es contar con un espacio donde las tareas necesarias para alcanzar diversas metas queden reflejadas por escrito, con la funcionalidad añadida de establecer fechas límite para su cumplimiento.
 
-[cite_start]Este repositorio corresponde a la Actividad de la Unidad I del curso de Desarrollo de aplicaciones web.
+Este repositorio corresponde a la Actividad de la Unidad I del curso de Desarrollo de aplicaciones web.
 
 ## Instrucciones para ejecutar el proyecto localmente
 
@@ -10,7 +10,7 @@ Para obtener una copia local y ejecutar la aplicación, sigue estos pasos:
 
 ### Prerrequisitos
 
-Asegúrate de tener instalado [Node.js](https://nodejs.org/) y un gestor de paquetes como `npm` o `yarn` en tu entorno local.
+Asegúrate de tener instalado [Node.js](https://nodejs.org/) y un gestor de paquetes como `npm` en tu entorno local.
 
 ### Instalación
 
