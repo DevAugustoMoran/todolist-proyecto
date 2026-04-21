@@ -1,73 +1,39 @@
-# React + TypeScript + Vite
+# To Do List - Control de Tareas y Metas Personales
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[cite_start]Este proyecto es una aplicación web diseñada para llevar el control de tareas y metas personales. [cite_start]El objetivo principal es contar con un espacio donde las tareas necesarias para alcanzar diversas metas queden reflejadas por escrito, con la funcionalidad añadida de establecer fechas límite para su cumplimiento.
 
-Currently, two official plugins are available:
+[cite_start]Este repositorio corresponde a la Actividad de la Unidad I del curso de Desarrollo de aplicaciones web.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Instrucciones para ejecutar el proyecto localmente
 
-## React Compiler
+Para obtener una copia local y ejecutar la aplicación, sigue estos pasos:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerrequisitos
 
-## Expanding the ESLint configuration
+Asegúrate de tener instalado [Node.js](https://nodejs.org/) y un gestor de paquetes como `npm` o `yarn` en tu entorno local.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Instalación
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1.  **Clonar el repositorio:**
+    ```bash
+    git clone [https://github.com/DevAugustoMoran/todolist-proyecto.git](https://github.com/DevAugustoMoran/todolist-proyecto.git)
+    ```
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+2.  **Navegar al directorio del proyecto:**
+    ```bash
+    cd todolist-proyecto
+    ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+3.  **Instalar las dependencias:**
+    ```bash
+    npm install
+    ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+4.  **Iniciar el servidor de desarrollo:**
+    ```bash
+    # npm run dev
+    ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+La aplicación debería abrirse automáticamente en tu navegador por defecto (usualmente en `http://localhost:3000` o `http://localhost:5173`).
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🔗 Enlaces del Proyecto
