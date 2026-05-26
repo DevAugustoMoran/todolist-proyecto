@@ -14,7 +14,7 @@ function FormTaskAndGoal({ onAdd }: FormTaskAndGoalProps) {
     
     const inputRefName = useRef<HTMLInputElement>(null);
     const inputRefDescription = useRef<HTMLTextAreaElement>(null);
-    const inputRefDueDate = useRef<HTMLInputElement>(null);
+    const inputRefduedate = useRef<HTMLInputElement>(null);
     const isActiveInMenu = useMenuStore((state) => state.menu.active);
     const addTask = useTaskStore((state) => state.addTask);
     const addGoal = useGoalStore((state) => state.addGoal);
@@ -23,12 +23,12 @@ function FormTaskAndGoal({ onAdd }: FormTaskAndGoalProps) {
         e.preventDefault()
         const name = inputRefName.current?.value;
         const description = inputRefDescription.current?.value;
-        const dueDate = inputRefDueDate.current?.value;
-        if(name && description && dueDate) {
+        const duedate = inputRefduedate.current?.value;
+        if(name && description && duedate) {
             if (isActiveInMenu === 'tasks'){
-                addTask({ id: Date.now(), name, description, dueDate });
+                addTask({ _id: Date.now().toString(), name, description, duedate });
             } else {
-                addGoal({ id: Date.now(), name, description, dueDate});
+                addGoal({ _id: Date.now().toString(), name, description, duedate});
             }
 
             if (onAdd) {
@@ -53,7 +53,7 @@ function FormTaskAndGoal({ onAdd }: FormTaskAndGoalProps) {
 
             <Form.Group className="mb-3">
                 <Form.Label>Due Date</Form.Label>
-                <Form.Control type="date" ref={inputRefDueDate}/>
+                <Form.Control type="date" ref={inputRefduedate}/>
             </Form.Group>
 
             <Button type="submit" variant="info">
